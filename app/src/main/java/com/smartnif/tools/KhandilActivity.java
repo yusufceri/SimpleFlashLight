@@ -87,7 +87,6 @@ public class KhandilActivity extends Activity{
 //		Log.i("info", "onResume()");
 		setContentView(R.layout.main);
 		
-		
 		animation = new ScaleAnimation(
 				0.8f, 1, 0.8f, 1, // From x, to x, from y, to y
 				ScaleAnimation.RELATIVE_TO_SELF, 0.5f,
@@ -97,8 +96,7 @@ public class KhandilActivity extends Activity{
 		animation.setStartOffset(0);
 		animation.setRepeatCount(1);
 		animation.setRepeatMode(Animation.REVERSE);
-		
-		
+
 		// AudioManager audio settings for adjusting the volume
 		audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
 		actVolume = (float) audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
